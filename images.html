@@ -6,19 +6,33 @@
     </head>
     <body style="background-color:powderblue;">
         <br>
-        <br><img src="download.jpeg">
-        <br><br><br><br><a href="index.html">Index</a>
+        <br><img src="download.jpeg" alt="Brahms Image">
+        <br><br>
+
+        <!-- JavaScript Button -->
+        <button onclick="displayMessage()">Click Me</button>
+        <p id="message" style="font-size: 20px; color: darkblue;"></p>
+
+        <br><br><br><br>
+        <a href="index.html">Index</a>
         <br><a href="addon.html">Addon Information</a>
+
         <style>
             @keyframes rainbow {
-            0% {color: red;}
-            50% {color: aquamarine;}
-            100% {color: cornflowerblue;}
-        }
+                0% {color: red;}
+                50% {color: aquamarine;}
+                100% {color: cornflowerblue;}
+            }
 
-        h1, h2, h3, h4, p, a, header {
-            animation: rainbow 2s infinite;
-        }
+            h1, h2, h3, h4, p, a, header {
+                animation: rainbow 2s infinite;
+            }
         </style>
+
+        <script>
+            function displayMessage() {
+                document.getElementById('message').innerText = 'Brahms';
+            }
+        </script>
     </body>
 </html>
